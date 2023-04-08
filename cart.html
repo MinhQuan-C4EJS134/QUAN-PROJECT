@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Viễn Chí Bảo - Giỏ hàng</title>
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/product.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <div class="app-layout">
+            <div class="head-bar">
+                <header class="upper-bar">
+                    <div style="height: 85%;">
+                        <a href="./home.html">
+                            <img src="./images/logoweb-1024x269.png" style="height:100%; object-fit: contain;">
+                        </a>
+                    </div>
+                    <div class="sb">
+                        <input type="text" placeholder="Tìm kiếm..." />
+                        <a href="./home.html"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; max-width: 20%; column-gap: 25px; justify-content: center;">
+                        <h5 style="flex-shrink: 0;">VỀ CHÚNG TÔI</h5>
+                        <h5 style="flex-shrink: 0;">094.27.66662</h5>
+                    </div>
+                    <a href="./cart.html">
+                        <div class="cart">
+                            <i class="bi bi-cart2"></i>
+                            <div id="cartAmount" class="cartAmount">0</div>
+                        </div>
+                    </a>
+                </header>
+
+                <nav class="lower-bar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="./home.html">
+                                <div style="display: flex; flex-direction: row; align-items: center;">
+                                    <h5>CẨM NANG KIẾN THỨC</h5>
+                                    <img width="30px" src="./images/shui-icon.gif">
+                                </div>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./home.html">KIẾN THỨC PHONG THỦY</a>
+                            <a href="./home.html">KIẾN THỨC PHẬT GIÁO</a>
+                            <a href="./home.html">KIẾN THỨC VỀ TRANG SỨC</a>
+                            <a href="./home.html">TIN TỨC</a>
+                        </div>
+                    </div>
+                    <a href="./product.html">
+                        <div>
+                            <h5>SALE OFF</h5>
+                        </div>
+                    </a>
+                    <a href="./product.html">
+                        <div>
+                            <h5>BỘ SƯU TẬP</h5>
+                        </div>
+                    </a>
+                    <a href="./product.html">
+                        <div>
+                            <h5>SẢN PHẨM MỚI</h5>
+                        </div>
+                    </a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="./product.html">
+                                <div>
+                                    <h5>TRANG SỨC</h5>
+                                </div>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./product.html">TRANG SỨC BẠC THÁI NAM</a>
+                            <a href="./product.html">TRANG SỨC BẠC THÁI NỮ</a>
+                            <a href="./product.html">TRANG SỨC ĐÁ QUÝ</a>
+                            <a href="./product.html">TRANG SỨC BẠC TA</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="./product.html">
+                                <div>
+                                    <h5>QUÀ TẶNG</h5>
+                                </div>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./product.html">QUÀ TẶNG DOANH NHÂN </a>
+                            <a href="./product.html">QUÀ TẶNG LỄ TẾT</a>
+                            <a href="./product.html">QUÀ TẶNG TÌNH YÊU</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <div style="height:120px;"></div>
+
+            <section>
+                <h6>
+                    <a href="./home.html">TRANG CHỦ</a> /
+                    <a href="./product.html">THANH TOÁN</a>
+                </h6>
+                <h4 style="margin-left: 10%">GIỎ HÀNG CỦA BẠN</h4>                
+            </section>
+
+            <div class="shopping-cart" id="shopping-cart">
+            
+            </div>
+            
+            <hr style="width:40%; margin:auto;">
+            
+            <div id="label" class="text-center">
+            
+            </div>
+
+
+            <section class="bottom-container">
+                <header class="footer">
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <a href="./home.html">
+                                <strong>LIÊN HỆ VỚI CHÚNG TÔI</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html" style="color:red">
+                                Hotline mua hàng 1: <strong>094 27 66662</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html" style="color:red">
+                                Hotline mua hàng 2: <strong>098 67 66662</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                (Tư vẫn miễn phí từ 8h30-22h các ngày trong tuần)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">HỖ TRỢ KHÁCH HÀNG</a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Điều khoản sử dụng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Chính sách đổi và bảo hành
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Chính sách vận chuyển &amp; thanh toán
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Chính sách bảo mật
+                            </a>
+                        </li>
+                    </ul>
+            
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <a href="./home.html">
+                                <strong>© CÔNG TY TNHH TRANG SỨC VIỄN CHÍ BẢO</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Showroom:
+                                <br>39 Xã Đàn - Phương Liên - Đống Đa - Hà Nội
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Tel: 098.67.66662
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html"> <span class="elementor-icon-list-text">Email:
+                                    vienchibao6868@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                <span>Đã chứng nhận đăng ký kinh doanh: 0107994675</span>
+                            </a>
+                        </li>
+                    </ul>
+            
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <div style="display: flex; justify-content: center ;">
+                                <img width="170" height="" src="./images/logoSaleNoti.png" alt=""
+                                    sizes="(max-width: 600px) 100vw, 600px">
+                            </div>
+                        </li>
+                    </ul>
+                </header>
+            </section>
+
+
+        </div>
+
+        
+        <script src="./js/Data.js"></script>
+        <script src="./js/cart.js"></script>
+        <!--Auto refresh, update Cart-->
+        <script language="javascript">
+            setTimeout(function () {
+                window.location.reload(1);
+            }, 15000);
+        </script>
+    </body>
+    
+
+</html>
