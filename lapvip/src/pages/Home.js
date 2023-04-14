@@ -1,55 +1,61 @@
+import './bootstrap.css'
+import './Home.css'
+import Logo from './images/logo.png';
+import img1 from './images/1.jpeg';
+import img1a from './images/1A.jpg';
+import img1B from './images/1B.jpg';
+import img1C from './images/1C.jpg';
+import img1D from './images/1D.jpg';
+import img1E from './images/1E.jpg';
+import img2 from './images/2.jpg';
+import img3 from './images/3.jpg';
+import img4 from './images/4.jpg';
+import img5 from './images/5.jpg';
+import img6 from './images/logoSaleNoti.png';
+
+
 function Home(){
     return(
         <div className="app-layout">
-            <div className="head-bar">
-                <header className="upper-bar">                
-                    <div style={"height: 85%;"}>
+            <div className="head-bar" >
+                <header className="upper-bar" style={{display:"flex", gap:"50px"}}>                
+                    <div style={{height: "100%" , marginLeft:"50px"}}>
                         
-                        <img src="./images/logo.png" height="70px" style="background-color: rgb(1, 5, 3);" ></img>
+                        <img src={Logo} height="70px" style={{backgroundColor: "rgb(1, 5, 3)"}} ></img>
                         
                     </div>                
                     <div className="sb">
-                        <input type="text" placeholder="Tìm kiếm..." />
+                        <input type="text" placeholder="Tìm kiếm..." style={{width:"500px"}} />
                         <i className="bi bi-search"></i>
                     </div>
-                    <div style={"display: flex; flex-wrap: wrap; max-width: 20%; column-gap: 25px; justify-content: center;"}>
-                        <h5 style={"flex-shrink: 0;"}>VỀ CHÚNG TÔI</h5>
-                        <h5 style={"flex-shrink: 0;"}>0919.855.259</h5>
+                    <div style={{display:"flex", gap:"50px"}}>
+                        <h5 style={{flexShrink: "0"}}>VỀ CHÚNG TÔI</h5>
+                        <h5 style={{flexShrink: "0"}}>0919.855.259</h5>
                     </div>                             
                         
                             <div className="cart">
-                                <i className="bi bi-cart2"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+</svg>
+
                                 <div id="cartAmount" className="cartAmount">0</div>
                             </div>
                                        
                 </header>
-                <nav className="lower-bar">
-                    <div className="dropdown">
-                        <button className="dropbtn">
-                           
-                                <div style={"display: flex; flex-direction: row; align-items: center;"}>                                                                                            
-                                    <h5>MACBOOK</h5>
-                                  
-                                </div>
-                            
-                        </button>
-                        <div className="dropdown-content">
-                            <a href="./home.html">CHIP M1</a>
-                            <a href="./home.html">CORE I7</a>
-                            <a href="./home.html">CORE I5</a>
-                            <a href="./home.html">CORE I3</a>
-                        </div>
-                    </div>
+                <nav className="lower-bar" >
+                        <a href="./product.html">
+                            <div><h5 style={{ color:"red", fontSize:"20px"}}>TRANG CHỦ</h5></div>
+                        </a>
                     <a href="./product.html">
-                        <div><h5>SALE OFF</h5></div>
+                        <div><h5 style={{ color:"red", fontSize:"20px"}}>SALE OFF</h5></div>
                     </a>
-                    <a href="./product.html"><div><h5>MÁY TÍNH BÀN</h5></div></a>
-                    <a href="./product.html"><div><h5>SẢN PHẨM MỚI</h5></div></a>
+                    <a href="./product.html"><div><h5 style={{ color:"red", fontSize:"20px"}}>MÁY TÍNH BÀN</h5></div></a>
+                    <a href="./product.html"><div><h5 style={{ color:"red", fontSize:"20px"}}>SẢN PHẨM MỚI</h5></div></a>
                     <div className="dropdown">
                         <button className="dropbtn">
                             <a href="./product.html">
                                 <div>
-                                    <h5>PHỤ KIỆN</h5>
+                                    <h5 style={{ color:"red", fontSize:"20px"}}>PHỤ KIỆN</h5>
                                 </div>
                             </a>
                         </button>
@@ -64,7 +70,7 @@ function Home(){
                         <button className="dropbtn">
                             <a href="./product.html">
                                 <div>
-                                    <h5>QUÀ TẶNG</h5>
+                                    <h5  style={{ color:"red", fontSize:"20px"}}>QUÀ TẶNG</h5>
                                 </div>
                             </a>
                         </button>
@@ -77,84 +83,97 @@ function Home(){
                 </nav>
             </div>
 
-            <div style={"height:120px;"}>        </div>
+            <div style={{height:"120px"}}>        </div>
 
-            <section style={"margin-bottom:15px"}>            
-                <div className="swiper mySwiper2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
-                style={"width: 100%;"}>
-                    <div className="swiper-wrapper" id="swiper-wrapper-616f60a54d9284d3" aria-live="polite" style={"transition-duration: 0ms; transform: translate3d(-3045px, 0px, 0px);"}>  
-                        <div className="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 3">
-                                <img className="img-swipe0" src="./images/1.jpeg"></img>
-                            
+            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                        <img src={img2} className="d-block w-50" alt="..."/>
                         </div>
-                        
-                    </div>                
-                    <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                </div>        
-            </section>
+                        <div className="carousel-item active">
+                        <img src={img3} className="d-block w-50" alt="..."/>
+                        </div>
+                        <div className="carousel-item active">
+                        <img src={img4} className="d-block w-50" alt="..."/>
+                        </div>
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                    </div>
 
-            <section style={"display: flex; flex-direction:column; margin: 15px 0 15px 0;"}><h3>SẢN PHẨM MỚI</h3>
-                <section className="mid-container-2">
-                    <div className="swiper mySwiper3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" style={"width: 80%;"}>
-                        <div className="swiper-wrapper" id="swiper-wrapper-c93099a3e010a7262" aria-live="polite" style={"transition-duration: 0ms; transform: translate3d(-1353.33px, 0px, 0px);"}>
-                            <div className="swiper-slide" aria-label="1/7" style={"align-items: start;"}>
+            <section style={{display: "flex", flexDirection:"column", margin:" 15px 0 15px 0"}}><h3>SẢN PHẨM MỚI</h3>
+                <section className="col-3">
+                    <div className="swiper mySwiper3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" style={{width: "80%"}}>
+                        <div className="swiper-wrapper" style={{display:"flex",width:"100"}} >
+                            <div className="swiper-slide" aria-label="1/7" style={{alignItems: "start"}}>
                                 <section className="mid-container-2">
-                                    <div style={"display:flex; justify-content: center;"}>
-                                        <div style={"width:80%;"}>
-                                                <img width="100%" height="" src="./images/2.jpg" alt=""
+                                    <div style={{display:"flex", justifyContent:" center"}}>
+                                        <div style={{width:"80%"}}>
+                                                <img width="100%" height="" src={img1a} alt=""
                                                     loading="lazy" sizes="(max-width: 510px) 100vw, 510px"></img>
                                         </div>
                                     </div>
                                     <div>
                                         <h4><a href="./product.html">DELL PRECISION 7670</a></h4>
-                                        <h4 style={"color:red"}>45.000.000₫</h4>
+                                        <h4 style={{color:"red"}}>45.000.000₫</h4>
                                     </div>
                                 </section>
                             </div>
-                            <div className="swiper-slide" aria-label="2/7" style={"align-items: start;"}>
+                            <div className="swiper-slide" aria-label="2/7" style={{alignItems: "start"}}>
                                 <section className="mid-container-2">
-                                    <div style={"display:flex; justify-content: center;"}>
-                                        <div style={"width:80%;"}>
+                                    <div style={{display:"flex", justifyContent: "center"}}>
+                                        <div style={{width:"80%"}}>
                                             
-                                                <img width="100%" height="" src="./images/3.jpg" alt="" loading="lazy"
+                                                <img width="100%" height="" src={img1B} alt="" loading="lazy"
                                                     sizes="(max-width: 510px) 100vw, 510px"></img>
                                            
                                         </div>
                                     </div>
                                     <div>
                                         <h4><a href="./product.html">Dell Precision 3571 Gen 12th</a></h4>
-                                        <h4 style={"color:red"}>45.660.000₫</h4>
+                                        <h4 style={{color:"red"}}>45.660.000₫</h4>
                                     </div>                        
                                 </section>
                             </div>
-                            <div className="swiper-slide swiper-slide-prev" aria-label="3/7" style={"align-items: start;"}>
+                            <div className="swiper-slide swiper-slide-prev" aria-label="3/7" style={{alignItems: "start"}}>
                                 <section className="mid-container-2">
-                                    <div style={"display:flex; justify-content: center;"}>
-                                        <div style={"width:80%;"}>
+                                    <div style={{display:"flex", justifyContent: "center"}}>
+                                        <div style={{width:"80%"}}>
                                                 <img width="100%" height=""
-                                                    src="./images/4.jpg" alt=""
+                                                    src={img3} alt=""
                                                     loading="lazy" sizes="(max-width: 510px) 100vw, 510px"></img>
                                         </div>
                                     </div>
                                     <div>
                                         <h4><a href="./product.html">Lenovo Legion 5 Pro 16IAH7H (2022)</a></h4>
-                                        <h4 style={"color:red"}>
+                                        <h4 style={{color:"red"}}>
                                             <del>105.000.000₫</del> 95.000.000₫
                                         </h4>
                                     </div>
                                 </section>
                             </div>
-                            <div className="swiper-slide swiper-slide-active" aria-label="4/7" style={"align-items: start;"}>
+                            <div className="swiper-slide swiper-slide-active" aria-label="4/7" style={{alignItems: "start"}}>
                                 <section className="mid-container-2">
-                                    <div style={"display:flex; justify-content: center;"}>
-                                        <div style={"width:80%;"}>
-                                                <img width="100%" height="" src="./images/5.jpg" alt=""
+                                    <div style={{display:"flex", justifyContent: "center"}}>
+                                        <div style={{width:"80%"}}>
+                                                <img width="100%" height="" src={img2} alt=""
                                                     loading="lazy" sizes="(max-width: 510px) 100vw, 510px"></img>
                                         </div>
                                     </div>
                                     <div>
                                         <h4><a href="./product.html">Macbook Air 13 2022 M2, RAM 8GB, SSD 512GB - New</a></h4>
-                                        <h4 style={"color:red"}>
+                                        <h4 style={{color:"red"}}>
                                             34.490.000 đ
                                         </h4>
                                     </div>
@@ -168,54 +187,54 @@ function Home(){
                     </div>
                 
                     <a href="./product.html">
-                        <div style="
-                            font-size: small; font-weight: bold; 
-                            padding:10px; margin:10px; border: 1px solid darkblue; border-radius:10px; 
-                            background: white;">
+                        <div style={{
+                            fonSize: "small", fontWeight: "bold", 
+                            padding:"10px", margin:"10px", border: "1px solid darkblue", borderRadius:"10px", 
+                            background: "white"}}>
                             Xem thêm
                         </div>    
                     </a>
                 </section>
             </section>
 
-            <section style={"display: flex; flex-direction:column; margin: 15px 0 15px 0;"}><h3>SẢN PHẨM BÁN CHẠY</h3>
+            <section style={{display: "flex", flexDirection:"column", margin: "15px 0 15px 0"}}><h3>SẢN PHẨM BÁN CHẠY</h3>
                 <section className="mid-container-2">
-                    <div style={"display:flex; justify-content: center;"}>
-                        <div style={"width:65%;"}>
-                                <img width="100%" height="" src="./images/5.jpg" alt="" loading="lazy"
+                    <div style={{display:"flex", justifyContent: "center"}}>
+                        <div style={{width:"65%"}}>
+                                <img width="100%" height="" src={img1E} alt="" loading="lazy"
                                     sizes="(max-width: 510px) 100vw, 510px"></img>
                         </div>
                     </div>
-                    <div style={"text-align: center;"}>
+                    <div style={{textAlign: "center"}}>
                         <h4>
                             <a href="./product.html">Macbook Air 13 2022 M2, RAM 8GB, SSD 512GB - New</a>
                         </h4>
-                        <h4 style={"color:red"}>
+                        <h4 style={{color:"red"}}>
                             34.490.000 đ
                         </h4>
                     </div>
-                        <div style="
-                            font-size: small; font-weight: bold; 
-                            padding:10px; margin:10px; border: 1px solid darkblue; border-radius:10px; 
-                            background: white;">
+                        <div style={{
+                            fontSize: "small", fontWeight: "bold", 
+                            padding:"10px", margin:"10px", border: "1px solid darkblue", borderRadius:"10px", 
+                            background: "white"}}>
                             Xem thêm
                         </div>
                 </section>
             </section>
                 <header className="footer">
-                    <ul style={["list-style-type:none;"]}>
+                    <ul style={{listStyleType:"none"}}>
                         <li>
                             <a href="./home.html">
                                 <strong>LIÊN HỆ VỚI CHÚNG TÔI</strong>
                             </a>
                         </li>
                         <li>
-                            <a href="./home.html" style={["color:red"]}>
+                            <a href="./home.html" style={{color: "red"}}>
                                 Hotline mua hàng 1: <strong>094 27 66662</strong>
                             </a>
                         </li>
                         <li>
-                            <a href="./home.html" style={["color:red"]}>
+                            <a href="./home.html" style={{color: "red"}}>
                                 Hotline mua hàng 2: <strong>098 67 66662</strong>
                             </a>
                         </li>
@@ -249,7 +268,7 @@ function Home(){
                         </li>
                     </ul>
             
-                    <ul style={["list-style-type:none;"]}>
+                    <ul>
                         <li>
                             <a href="./home.html">
                                 <strong>© CÔNG TY TNHH LAPVIP</strong>
@@ -257,7 +276,7 @@ function Home(){
                         </li>
                         <li>
                                 Showroom:
-                                <br>39 Xã Đàn - Phương Liên - Đống Đa - Hà Nội</br>
+                                39 Xã Đàn - Phương Liên - Đống Đa - Hà Nội
                         </li>
                         <li>
                             <a href="./home.html">
@@ -275,10 +294,10 @@ function Home(){
                         </li>
                     </ul>
             
-                    <ul style={["list-style-type:none;"]}>
+                    <ul >
                         <li>
-                            <div style={["display: flex; justify-content: center ;"]}>
-                                <img width="170" height="" src="./images/logoSaleNoti.png" alt=""
+                            <div style={{display: "flex", justifyContent: "center" }}>
+                                <img width="170" height="" src={img6} alt=""
                                     sizes="(max-width: 600px) 100vw, 600px"></img>
                             </div>
                         </li>

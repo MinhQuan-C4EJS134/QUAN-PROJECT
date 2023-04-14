@@ -1,6 +1,11 @@
+import img1 from './images/1.jpeg'
+
+
 function Product(){
     return(
-        <h1> Productpage</h1>
+        <h1>
+            <img src={img1}></img>
+        </h1>
     )
 }
 
