@@ -5,7 +5,7 @@ import Sanphammoi from "./Sanphammoi"
 function Body() {
     return (
         <>
-            <div className="container" style={{ marginTop: "50px" }}>
+            <div className="container" style={{ marginTop: "200px" }}>
                 {/* <div >
                     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={{ width: "2500px" }}>
                         <div className="carousel-inner"  >
@@ -29,7 +29,7 @@ function Body() {
                         </button>
                     </div>
                 </div> */}
-
+                
                 <Sanphammoi />
             </div>
         </>

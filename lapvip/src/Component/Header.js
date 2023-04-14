@@ -2,77 +2,66 @@
 
 
 
-function Header(){
-    return(
-        <div className="app-layout">
-            <div className="head-bar" >
-                <header className="upper-bar" style={{display:"flex", gap:"50px",height:""}}>                
-                    <div style={{height: "100%" , marginLeft:"50px"}}>
-                        
-                        <img src='images/logo.png' height="70px" style={{backgroundColor: "rgb(1, 5, 3)"}} ></img>
-                        
-                    </div>                
-                    <div className="sb">
-                        <input type="text" placeholder="Tìm kiếm..." style={{width:"500px"}} />
-
-                        <i className="bi bi-search"></i>
+function Header() {
+    return (
+        <>
+            <div className="row" style={{height:"10px"}}>
+                <div className="col-2" style={{alignItems:"center"}}>
+                    <img src="images/logo.png" className="img-fluid" alt="..." width={"300px"} style={{ background: "black" }} />
+                </div>
+                <div className="col-6">
+                    <div className="row">
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                            <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                        </div>
                     </div>
-                    <div style={{display:"flex", gap:"50px"}}>
-                        <h5 style={{flexShrink: "0"}}>VỀ CHÚNG TÔI</h5>
-                        <h5 style={{flexShrink: "0"}}>0919.855.259</h5>
-                    </div>                             
-                        
-                            <div className="cart">
-                               <div><img src="images/shopping-cart.svg" height="30px"></img></div>
-
-                                <div id="cartAmount" className="cartAmount">0</div>
+                    <div className="row">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                            <div className="container-fluid">
+                                <a className="navbar-brand" href="#">TRANG CHỦ</a>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon" />
+                                </button>
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li className="nav-item">
+                                            <a className="nav-link active" aria-current="page" href="#">MÁY TÍNH BÀN</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">LAPTOP</a>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                PHỤ KIỆN
+                                            </a>
+                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a className="dropdown-item" href="#">TAI NGHE</a></li>
+                                                <li><a className="dropdown-item" href="#">CHUỘT</a></li>
+                                                <li><hr className="dropdown-divider" /></li>
+                                                <li><a className="dropdown-item" href="#">BÀN PHÍM</a></li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">ĐỊA CHỈ</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                                       
-                </header>
-                <nav className="lower-bar" >
-                        <a href="./product.html">
-                            <div><h5 style={{ color:"red", fontSize:"20px"}}>TRANG CHỦ</h5></div>
-                        </a>
-                    <a href="./product.html">
-                        <div><h5 style={{ color:"red", fontSize:"20px"}}>SALE OFF</h5></div>
-                    </a>
-                    <a href="./product.html"><div><h5 style={{ color:"red", fontSize:"20px"}}>MÁY TÍNH BÀN</h5></div></a>
-                    <a href="./product.html"><div><h5 style={{ color:"red", fontSize:"20px"}}>SẢN PHẨM MỚI</h5></div></a>
-                    <div className="dropdown">
-                        <button className="dropbtn">
-                            <a href="./product.html">
-                                <div>
-                                    <h5 style={{ color:"red", fontSize:"20px"}}>PHỤ KIỆN</h5>
-                                </div>
-                            </a>
-                        </button>
-                        <div className="dropdown-content">
-                            <a href="./product.html">TAI NGHE</a>
-                            <a href="./product.html">BÀN PHÍM</a>
-                            <a href="./product.html">MOUSE</a>
-                            <a href="./product.html">BALO</a>
-                        </div>
+                        </nav>
                     </div>
-                    <div className="dropdown">
-                        <button className="dropbtn">
-                            <a href="./product.html">
-                                <div>
-                                    <h5  style={{ color:"red", fontSize:"20px"}}>QUÀ TẶNG</h5>
-                                </div>
-                            </a>
-                        </button>
-                        <div className="dropdown-content">
-                            <a href="./product.html">LAPTOP </a>
-                            <a href="./product.html">MÁY TÍNH BÀN</a>
-                        
-                        </div>
+                </div>
+                <div className="col-2">
+                    <div className="badge bg-primary text-wrap" style={{ "width": "10rem" }}>
+                        VỀ CHÚNG TÔI
+                        0919.855.259
+
                     </div>
-                </nav>
+                </div>
+
 
             </div>
-
-
-        </div>
+        </>
     )
 }
 

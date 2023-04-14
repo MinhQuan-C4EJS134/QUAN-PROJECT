@@ -5,10 +5,11 @@ import Productpage from './pages/Product'
 import Cartpage from './pages/Cart'
 import Header from './Component/Header';
 import Body from './Component/Body';
+import Footer from './Component/Footer';
 
 function App() {
   return (
-    <div className="App" >
+    <div  >
       <a
         className="App-link"
         href="https://reactjs.org"
@@ -18,8 +19,9 @@ function App() {
         
         </a>
        
-      <Header/>
-      <Body/>
+      <div><Header/></div>
+      <div><Body/></div>
+      <div><Footer/></div>
 
       {/* <Routes>
         <Route path="/" element={<Homepage/>} />
