@@ -1,8 +1,9 @@
+import '/node_modules/bootstrap/dist/css/bootstrap.css'
 function Footer() {
     return (
         <>
-            <div className="container">
-                <div className="row">
+            <div style={{margin:"110px 150px 0px 150px"}} >
+                <div className="row" style={{gap:"122px"}}>
                     <div className="col" style={{color:"red"}}>
                         LIÊN HỆ VỚI CHÚNG TÔI
                         Hotline mua hàng 1: 094 27 66662

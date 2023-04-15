@@ -1,12 +1,13 @@
 import Sanphammoi from "./Sanphammoi"
-
+import Sanphambanchay from "./Sanphambanchay"
+import '/node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 function Body() {
     return (
         <>
-            <div className="container" style={{ marginTop: "200px" }}>
-                {/* <div >
+            <div className="" style={{margin: "220px 420px 0px 420px" }}>
+                <div style={{height:"1400px"}}>
                     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={{ width: "2500px" }}>
                         <div className="carousel-inner"  >
                             <div className="carousel-item active">
@@ -28,9 +29,10 @@ function Body() {
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div> */}
+                </div>
                 
                 <Sanphammoi />
+                <Sanphambanchay/>
             </div>
         </>
     )

@@ -1,10 +1,11 @@
 import Sanpham from "./Sanpham"
+import '/node_modules/bootstrap/dist/css/bootstrap.css'
 function Sanphammoi() {
     return (
         <>
-            <h3 style={{ color: "red", marginTop: "50px" }}>SẢN PHẨM MỚI</h3>
-            <div className="container " style={{width:"1000px"}}>
-                <div className="row">
+            <div  >
+                <h2 style={{display:"flex",justifyContent:"center",color:"red"}}>SẢN PHẨM MỚI</h2>
+                <div className="row" style={{ width: "1000px" }}>
                     <div className="col">
                         <Sanpham image="images/2.jpg" name='Dell precision 7670' price='46.990.000đ' />
                     </div>
@@ -16,6 +17,7 @@ function Sanphammoi() {
                     </div>
                 </div>
             </div>
+           
         </>
 
     )
